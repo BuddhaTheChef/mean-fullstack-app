@@ -1,1 +1,73 @@
-<mat-toolbar color="primary">MEAN TUTORIAL</mat-toolbar>
+<mat-toolbar color="primary" style="position: fixed; z-index: 3;">
+
+    <h2><a href="#start">MEAN TUTORIAL</a></h2>
+
+    <ul class="nav">
+        <li><a class="divhead1" href="#nodediv">Node</a></li>
+        <li><a class="divhead2" href="#expressdiv">Express</a></li>
+        <li><a class="divhead3" href="#angulardiv">Angular</a></li>
+        <li><a class="divhead4" href="#mongodiv">Mongo DB</a></li>
+    </ul>
+</mat-toolbar>
+
+
+<div class="d-i-div1" id="start">
+    <h1 style="text-align: center; font-size: 3rem;">Downloads and Installations</h1>
+
+    <mat-card class="download-divs">
+        <h3>Downloading Node</h3>
+        <p> 1. Check to see what node version you have by typing "node --version" if nothing is found move to step 2.</p>
+        <p>2. Go to <a href="https://nodejs.org/en/download/">Node.js Download</a></p>
+        <p>3. Install latest stable version and  click download </p>
+        <p>4. Follow installation procedures</p>
+        <p>5. Check to see if you Dowloaded it by typing "node --version"</p>
+    </mat-card>
+
+    <mat-card class="download-divs">
+        <h3>Downloading Express</h3>
+        <p> 1. Must have node installed before going further</p>
+        <p>2. Go to a project folder of your terminal and type "npm install express --save"</p>
+        <p>3. Check to see if you Dowloaded it by creating a new js page and type "var express = require('express') var app = express()"</p>
+    </mat-card>
+
+<mat-card class="download-divs">
+    <h3>Downloading Angular</h3>
+    <p> 1. Must have node installed before going further</p>
+    <p>2. Go to the root of your terminal and type "npm install -g @angular/cli"</p>
+    <p>3. At the end of the install process a prompt will come up asking you to share anonymous useage data with the Angular team type "y" for Yes or "n" for No</p>
+    <p>to chek if the download was successful type "ng version"</p>
+</mat-card>
+
+<mat-card class="download-divs">
+    <h3>Downloading MongoDB</h3>
+    <p> 1. Go to <a href="https://www.mongodb.com/download-center/community">Mongo DB download</a> to start download</p>
+    <p>2. Select your operating system and current release in the dropdown forms and click "Download"</p>
+    <p>3. Follow installation procedures you will come to a page that looks like this:</p>
+    <img src="assets/img/mongopic1.jpg" height="300"/>
+    <p>4. Check boxes to match image above and finish installation process</p>
+    <p>5. To check if everything worked go to the folder path where MongoDB downloaded and open the bin folder</p>
+    <p>6. Open up the "mongo.exe" folder and type "use newDB"</p>
+    <p>7. Type "db.items.insert(&#123;name: SOMENAME&#125;)" then type "db.items.find()"</p>
+    <img src="assets/img/mongopic2.jpg" height="300"/>
+</mat-card>
+
+</div>
+
+
+<div class="d-i-div" id="nodediv">
+    <h1 style="display: inline-flex">Node</h1>
+</div>
+
+
+<div class="d-i-div" id="expressdiv">
+    <h1 style="display: inline-flex">Express</h1>
+</div>
+
+
+<div class="d-i-div" id="angulardiv">
+    <h1 style="display: inline-flex">Angular</h1>
+</div>
+
+<div class="d-i-div" id="mongodiv">
+    <h1 style="display: inline-flex">Mongo DB</h1>
+</div>
