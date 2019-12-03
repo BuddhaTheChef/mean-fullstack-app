@@ -10,12 +10,12 @@
 </mat-toolbar>
 
 <div class="d-i-div1" id="start">
-  <h1 style="text-align: center; font-size: 3rem;">
+  <h1 style="text-align: center; font-size: 3rem; color: whitesmoke">
     Downloads and Installations
   </h1>
 
   <mat-card class="download-divs">
-    <h3>Downloading Node</h3>
+    <h3 style="color: #c1185a">Downloading Node</h3>
     <p>
       1. Check to see what node version you have by typing "node --version" if
       nothing is found move to step 2.
@@ -29,7 +29,7 @@
   </mat-card>
 
   <mat-card class="download-divs">
-    <h3>Downloading Express</h3>
+    <h3 style="color: #c1185a">Downloading Express</h3>
     <p>1. Must have node installed before going further</p>
     <p>
       2. Go to a project folder of your terminal and type "npm install express
@@ -42,7 +42,7 @@
   </mat-card>
 
   <mat-card class="download-divs">
-    <h3>Downloading Angular</h3>
+    <h3 style="color: #c1185a">Downloading Angular</h3>
     <p>1. Must have node installed before going further</p>
     <p>
       2. Go to the root of your terminal and type "npm install -g @angular/cli"
@@ -56,7 +56,7 @@
   </mat-card>
 
   <mat-card class="download-divs">
-    <h3>Downloading MongoDB</h3>
+    <h3 style="color: #c1185a">Downloading MongoDB</h3>
     <p>
       1. Go to
       <a href="https://www.mongodb.com/download-center/community"
@@ -89,7 +89,7 @@
 
 <div class="d-i-div" id="nodediv">
   <mat-card class="download-divs">
-    <h1 style="display: inline-flex">Node</h1>
+    <h1 style="display: inline-flex; color: #c1185a;">Node</h1>
     <p>
       To demo installing middleware with npm, we'll use a super useful package
       called nodemon. Using nodemon instead of the node command in your terminal
@@ -101,7 +101,7 @@
     </p>
     <img src="assets/img/nodemon1.jpg" height="100" width="600" />
 
-    <hr />
+
 
     <p>
       Using your terminal, make a file called test.js and add the following line
@@ -115,7 +115,7 @@
 
 <div class="d-i-div" id="expressdiv">
   <mat-card class="download-divs">
-    <h1 style="display: inline-flex">Express</h1>
+    <h1 style="display: inline-flex; color: #c1185a;">Express</h1>
     <p>
       Express.js is a framework written in JavaScript which acts as an interface
       to Node's server functionality. It is also the E in the MEAN stack, so it
@@ -126,34 +126,39 @@
       additional functionality down the road, we will begin creating our own MVC
       layout in Express.
     </p>
-    <hr />
+
     <p>
       Create a directory called "HelloExpress" directory, create a file called
       "server.js". This file will contain all the logic that will run our
       Express Server and navigate inide it.
     </p>
-    <img src="assets/img/express1.jpg" height="300" width="600" />
+    <img src="assets/img/express1.jpg" height="300" width="800" />
     <p>
-      Run the server.js file using nodemon "nodemon server.js"
+      Run the server.js file using nodemon
     </p>
+    <hr/>
+    <h3> "nodemon server.js"</h3>
+    <hr/>
   </mat-card>
 </div>
 
 <div class="d-i-div" id="angulardiv">
   <mat-card class="download-divs">
-    <h1 style="display: inline-flex">Angular</h1>
+    <h1 style="display: inline-flex; color: #c1185a;">Angular</h1>
     <p>
-      We will need to create or utilize an Express project. Using the terminal,
+      Create an Express project. Using the terminal,
       we can create a new angular project within our Express root directory. We
       then need to build the Angular project (using the terminal, navigate to
-      the Angular app's root directory and run the ng build --watch command)
+      the Angular app's root directory and run the </p>
+      <hr/>
+      <h3>ng build --watch </h3>
+      <hr/>
+      <p>command
       which will create a dist folder within that directory. Lastly, we need our
       Express project to define a static route to the newly created dist folder.
-      Once this is done, users visiting our Express project will be served the
-      Angular application.
     </p>
 
-    <hr />
+ 
     <p>
       As long as Express knows where we keep static files, it will serve
       index.html by default when we make a request to the root route. Since
@@ -161,10 +166,43 @@
       direct Express to find it. Do not overwrite what should be served on the
       root route so that it will always default to serving index.html.
     </p>
-    <img src="assets/img/mongopic1.jpg" height="300" />
+    <img src="assets/img/angular1.jpg" height="100" width="900" />
   </mat-card>
 </div>
 
 <div class="d-i-div" id="mongodiv">
-  <h1 style="display: inline-flex">Mongo DB</h1>
+  <mat-card class="download-divs">
+  <h1 style="display: inline-flex; color: #c1185a;">Mongo DB</h1>
+  <p>
+      After creating those two files, head over again to the bin folder you have in your mongodb directory and open up your shell inside it. Run the following command:
+  </p>
+  <hr/>
+     <h3>mongod</h3> 
+     <hr/>
+  <p>
+      In order to work with this server, we need a mediator. So open another command window inside the bind folder and run the following command:
+  </p> 
+  <hr/>
+      <h3>mongo</h3>
+    <hr/>
+      <img src="assets/img/mongoServe1.jpg" height="300" width="700" />
+    <p>
+      After running this command, navigate to the shell which we ran mongod command (which is our server). You’ll see a ‘connection accepted’ message at the end. That means our installation and configuration is successful!
+      
+      Just simply run in the mongo shell:
+    </p>
+    <hr/>
+     <h3>db</h3> 
+     <hr/>
+     <p>To show all databses type:</p>
+     <hr/>
+     <h3>show databases</h3>
+     <hr/>
+     <img src="assets/img/mongoServe2.jpg" height="300" width="700" />
+     <p>To use a paticular database type:</p>
+     <hr/>
+     <h3>use 'DATABASE NAME'</h3>
+     <hr/>
+     <img src="assets/img/mongoServe3.jpg" height="300" width="700" />
+  </mat-card>
 </div>
